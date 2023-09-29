@@ -176,18 +176,18 @@ var App=typeof App==='undefined'?0:App;
 </head>
 <body>
 
-<button id="player" type="button"
+<button id="player0" type="button"
   onclick="javascript:toggleSound();">
   Ascend
 </button>
-<audio id="audio">
+<audio id="audio0">
   <source src="music/ascend.mp3" type="audio/mpeg">
 Your browser does not support this audio format.
 </audio>
 
 <script type="text/javascript">
 function toggleSound() {
-  var audioElem = document.getElementById('audio');
+  var audioElem = document.getElementById('audio0');
   if (audioElem.paused)
     audioElem.play();
   else
