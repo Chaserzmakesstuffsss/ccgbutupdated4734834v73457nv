@@ -169,31 +169,16 @@ var App=typeof App==='undefined'?0:App;
 		
 		<div id="sectionRight" class="inset">
 			<!-- ad -->
-			<head>
-  <meta charset="utf-8">
-  <title>JavaScript Toggle (Play/Pause) Sound on Click Event of DOM Element</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-</head>
-<body>
-
-<button id="playeb" type="button"
-  onclick="javascript:toggleSound();">
-  Ascend
-</button>
-<audio id="audio0">
-  <source src="music/ascend.mp3" type="audio/mpeg">
-Your browser does not support this audio format.
-</audio>
-
 <script type="text/javascript">
-function toggleSound() {
-  var audioElem = document.getElementById('audio0');
-  if (audioElem.paused)
-    audioElem.play();
-  else
-    audioElem.pause();
-}
+      // creates an array of audios and assigns the src to each of them
+      const srcArr = ['audio/ascend.mp3', 'audio/click (2).mp3'];
+      const audios = new Array(srcArr.length).fill(new Audio());
+      audios.forEach((audio, index) => audio.src = srcArr[index]);
 </script>
+			<button id="button" onclick="audios[0].play();"> click me </button>
+<button id="button" onclick="audios[1].play();"> click me </button>
+
+			
 			<div id="smallSupport" style="width:300px;text-align:center;padding-bottom:40px;background:rgba(0,0,0,0.5);position:relative;z-index:100;">
 				
 				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
