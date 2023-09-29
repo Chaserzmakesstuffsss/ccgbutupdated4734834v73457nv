@@ -169,14 +169,28 @@ var App=typeof App==='undefined'?0:App;
 		
 		<div id="sectionRight" class="inset">
 			<!-- ad -->
-<script type="text/javascript">
-      // creates an array of audios and assigns the src to each of them
-      const srcArr = ['music/ascend.mp3', 'music/click (2).mp3'];
-      const audios = new Array(srcArr.length).fill(new Audio());
-      audios.forEach((audio, index) => audio.src = srcArr[index]);
-</script>
-			<button id="button" onclick="audios[0].play();"> click me </button>
-<button id="button" onclick="audios[1].play();"> click me </button>
+function playAll() {
+  document.querySelector('.container').classList.add('playing');
+  const audios = document.querySelectorAll('audio');
+  audios.forEach(audio => {
+    audio.play();
+  });
+
+}
+.container {
+  display: none;
+}
+
+.container.playing {
+  display: block;
+}
+			<button onclick="playAll();">Play them all</button>
+<div class="container">
+  <h2>Horse
+  </h2> <audio src="https://www.w3schools.com/html/horse.mp3" controls loop></audio>
+  <h2>Placeholder</h2> <audio src="https://ia903002.us.archive.org/18/items/placeholder/placeholder.mp3" controls loop></audio>
+</div>
+
 
 			
 			<div id="smallSupport" style="width:300px;text-align:center;padding-bottom:40px;background:rgba(0,0,0,0.5);position:relative;z-index:100;">
