@@ -171,12 +171,12 @@ var App=typeof App==='undefined'?0:App;
 			<!-- ad -->
 <script type="text/javascript">
       // creates an array of audios and assigns the src to each of them
-      const srcArr = ['audio/ascend.mp3', 'audio/click (2).mp3'];
+      const srcArr = ['music/ascend.mp3', 'music/click (2).mp3'];
       const audios = new Array(srcArr.length).fill(new Audio());
       audios.forEach((audio, index) => audio.src = srcArr[index]);
 </script>
-			<button id="button" onclick="ascend.play();"> click me </button>
-<button id="button" onclick="click.play();"> click me </button>
+			<button id="button" onclick="audios[0].play();"> click me </button>
+<button id="button" onclick="audios[1].play();"> click me </button>
 
 			
 			<div id="smallSupport" style="width:300px;text-align:center;padding-bottom:40px;background:rgba(0,0,0,0.5);position:relative;z-index:100;">
