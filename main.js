@@ -11778,6 +11778,7 @@ Game.Launch=function()
 				'upgrade',
 				'ascend',
 				'preclick',
+				'grandmapocalypse',
 				'giftSend','giftGet',
 				//'levelPrestige',
 			],
