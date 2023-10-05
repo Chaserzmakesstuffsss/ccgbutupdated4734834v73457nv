@@ -11776,6 +11776,8 @@ Game.Launch=function()
 				'cashIn','cashIn2',
 				'cashOut',
 				'upgrade',
+				'ascend',
+				'preclick',
 				'giftSend','giftGet',
 				//'levelPrestige',
 			],
