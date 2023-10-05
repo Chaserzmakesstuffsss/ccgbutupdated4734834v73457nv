@@ -16350,8 +16350,8 @@ Game.Launch=function()
 				if (Game.Has('Classic dairy selection')) Game.Unlock('Milk selector');
 				if (Game.Has('Basic wallpaper assortment')) Game.Unlock('Background selector');
 				if (Game.Has('Golden cookie alert sound')) Game.Unlock('Golden cookie sound selector');
-				if (Game.Has('Sound test')) Game.Unlock('Jukebox');
-				Game.Unlock('Jukebox');
+				if (Game.Has('Legacy')) Game.Unlock('Jukebox');
+				
 				
 				if (Game.Has('Prism heart biscuits')) Game.Win('Lovely cookies');
 				if (Game.season=='easter')
