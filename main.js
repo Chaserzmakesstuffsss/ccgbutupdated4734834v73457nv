@@ -3704,7 +3704,10 @@ Game.Launch=function()
 		{
 			//produce a crate with associated tooltip for an upgrade or achievement
 			//me is an object representing the upgrade or achievement
-			//context can be "store", "ascend", "stats" or undefined
+			//context can be "store", "ascend", "stats" or 
+
+
+
 			//forceClickStr changes what is done when the crate is clicked
 			//id is the resulting div's desired id
 			
@@ -11730,7 +11733,7 @@ Game.Launch=function()
 		new Game.Upgrade('Sound test',loc("Unlocks the <b>jukebox</b>, which allows you to play through every sound file in the game.")+'<q>One two, one two. Is this thing on?</q>',99999999999,[31,12]);Game.last.pool='prestige';Game.last.parents=['Fanciful dairy selection','Distinguished wallpaper assortment','Golden cookie alert sound'];
 		
 		order=49900;
-		new Game.Upgrade('Jukebox',loc("Play through the game's sound files!"),0,[31,12]);
+		new Game.Upgrade('Jukebox',loc("Play through the game's sound files!"),1,[31,12]);
 		Game.last.pool='toggle';
 		Game.jukebox={
 			sounds:[
