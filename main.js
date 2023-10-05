@@ -934,7 +934,7 @@ var PlayMusicSound=function(url,vol,pitchVar)
 	PlaySound(url,(vol||1)-(Music?10:0),pitchVar);
 }
 
-Music=false;
+Music=true;
 PlayCue=function(cue,arg)
 {
 	if (Music && Game.jukebox.trackAuto) Music.cue(cue,arg);
@@ -11887,7 +11887,7 @@ Game.Launch=function()
 			str+='</select><a class="option" onclick="Game.jukebox.setSound(Math.floor(Math.random()*Game.jukebox.sounds.length));">'+loc("Random")+'</a>';
 			if (App)
 			{
-				var data=Music?Music.tracks[Game.jukebox.tracks[Game.jukebox.onTrack]].audio:0;
+				var data=Music?Music.tracks[Game.jukebox.tracks[Game.jukebox.onTrack]].audio:1;
 				var dur=data?data.duration+1:0;
 				str+='<div class="line"></div>';
 				str+='<div class="fancyText" style="font-style:italic;letter-spacing:2px;padding:8px;font-size:18px;" id="jukeboxOnTrack">&bull; '+cap(Game.jukebox.tracks[Game.jukebox.onTrack])+' &bull;</div>';
