@@ -172,7 +172,7 @@ function formatEveryThirdPower(notations)
 	return function (val)
 	{
 		var base=0,notationValue='';
-		if (!isFinite(val)) return 'No';
+		if (!isFinite(val)) return 'Infinity...Jk';
 		if (val>=1000000)
 		{
 			val/=1000;
@@ -181,7 +181,7 @@ function formatEveryThirdPower(notations)
 				val/=1000;
 				base++;
 			}
-			if (base>=notations.length) {return 'No';} else {notationValue=notations[base];}
+			if (base>=notations.length) {return 'Infinity...Jk';} else {notationValue=notations[base];}
 		}
 		return (Math.round(val*1000)/1000)+notationValue;
 	};
