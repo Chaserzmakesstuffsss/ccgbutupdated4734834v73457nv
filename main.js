@@ -2522,7 +2522,7 @@ Game.Launch=function()
 				}
 				
 				l('heraldsAmount').textContent=Math.floor(Game.heralds);
-				Game.externalDataLoaded=true;
+				Game.externalDataLoaded=false;
 			}catch(e){}
 		}
 		
