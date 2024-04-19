@@ -934,7 +934,7 @@ var PlayMusicSound=function(url,vol,pitchVar)
 	PlaySound(url,(vol||1)-(Music?10:0),pitchVar);
 }
 
-Music=false;
+Music=true;
 PlayCue=function(cue,arg)
 {
 	if (Music && Game.jukebox.trackAuto) Music.cue(cue,arg);
