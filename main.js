@@ -11849,7 +11849,7 @@ Game.Launch=function()
 				Game.jukebox.trackAuto=!Game.jukebox.trackAuto;
 				if (!Music) return false;
 				if (Game.jukebox.trackAuto) {Music.cue('play');l('jukeboxMusicAuto').classList.remove('off');}
-				else {/*Game.jukebox.setTrack(Game.jukebox.onTrack);*/l('jukeboxMusicAuto').classList.add('off');}
+				else {Game.jukebox.setTrack(Game.jukebox.onTrack);*/l('jukeboxMusicAuto').classList.add('off');}
 			},
 			pressMusicShuffle:function(){
 				Game.jukebox.trackShuffle=!Game.jukebox.trackShuffle;
